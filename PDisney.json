@@ -1,0 +1,32 @@
+[
+  {
+    "nome": "Mickey Mouse",
+    "numero": "91",
+    "foto": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Mickey_Mouse.png",
+    "cargo": "Presidente"
+  },
+  {
+    "nome": "Tio Patinhas",
+    "numero": "91",
+    "foto": "https://upload.wikimedia.org/wikipedia/en/f/f3/Scrooge_McDuck.png",
+    "cargo": "Governador(a)"
+  },
+  {
+    "nome": "Margarida",
+    "numero": "9111",
+    "foto": "https://upload.wikimedia.org/wikipedia/en/f/f6/Daisy_Duck.png",
+    "cargo": "Deputado(a) Federal"
+  },
+  {
+    "nome": "Gastão",
+    "numero": "91110",
+    "foto": "https://upload.wikimedia.org/wikipedia/en/a/a7/Gladstone_Gander.png",
+    "cargo": "Deputado(a) Estadual"
+  },
+  {
+    "nome": "Mago Merlin",
+    "numero": "910",
+    "foto": "https://upload.wikimedia.org/wikipedia/en/3/30/Merlin_Disney.png",
+    "cargo": "Senador(a)"
+  }
+]

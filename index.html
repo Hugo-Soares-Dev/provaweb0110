@@ -6,14 +6,14 @@
     <title>Registro de candidatos</title>
     <link rel="stylesheet" href="style.css">    
     <!-- Inclusão dos scripts dos partidos -->
-    <script src="script.js" defer></script> 
+    <script src="script.js?v=2" defer></script> 
 </head>
 <body>
 <h1>Registro de Candidatos</h1>
 
     <div class="form-group">
         <label for="txtNumeroPartido">Número do Partido:</label>
-        <input type="text" id="txtNumeroPartido" placeholder="Digite o número (ex: 91)" onchange="processarPartido()">
+        <input type="text" id="txtNumeroPartido" placeholder="Digite o número (ex: 91)" oninput="processarPartido()">
         <span id="msgErroPartido" class="erro"></span>
     </div>
 
@@ -72,62 +72,6 @@ Regras: XX - Presidente/Governador(a); XXn - Senador(a); XXnn - Dep. Fed.; XXnnn
     <ul id="listaRegistrados">
         <!-- Itens registrados serão exibidos aqui pelo estudante -->
     </ul>
-
-    <script>
-        // Array global para armazenar as candidaturas válidas registradas em memória
-        const registroCandidaturas = [];
-
-        // TODO: Carregar o arquivo 'partidos.json' e armazenar em uma estrutura local APENAS com os dados do seu partido
-
-        function processarPartido() {
-            // TODO: Ler o valor digitado no 'txtNumeroPartido'
-            // TODO: Validar se o partido existe (91, 92, 93 ou 94)
-            // TODO: Se inválido, exibir mensagem no 'msgErroPartido'
-            // TODO: Se válido, atualizar 'lblNomePartido' e chamar a função correspondente do JS do partido carregado
-            // TODO: Popular a listbox 'lstCandidatos' com os dados lidos
-        }
-
-        function selecionarCandidato() {
-            // TODO: Obter o item selecionado na listbox 'lstCandidatos'
-
-            const lista = document.getElementById("lstCandidatos");
-
-            const nomeSelecionado = lista.value;
-
-            const candidatoSelecionado = candidatosPDisney.find(
-                candidato => candidato.nome === nomeSelecionado );
-
-                console.log(candidatoSelecionado);
-                document.getElementById("infoNome").textContent =
-                candidatoSelecionado.nome;
-                
-                document.getElementById("infoFoto").src =
-                candidatoSelecionado.foto;
-
-                document.getElementById("painelCandidato").style.display = "block";
-
-
-            // TODO: Atualizar o campo 'lstCargos' com o cargo do candidato selecionado
-            // TODO: Preencher o campo 'txtNumeroCandidato' com o número do candidato
-            // TODO: Exibir o painel de detalhes ('painelCandidato') com os dados e a imagem (URL) correspondente
-        }
-
-        function registrarCandidatura() {
-            // TODO: Validar se todos os campos estão preenchidos (Candidato, Cargo, Número)
-            // TODO: Validar as regras de número definidas para o partido selecionado
-            // TODO: Verificar se o candidato já foi registrado anteriormente (evitar indicações repetidas)
-            // TODO: Respeitar os limites de vagas por cargo estabelecidos para o trabalho
-            // TODO: Adicionar o candidato verificado ao array 'registroCandidaturas'
-            // TODO: Atualizar a exibição visual na lista '#listaRegistrados'
-        }
-
-        function gravarEEnviarTSE() {
-            // TODO: Verificar se existe pelo menos uma candidatura registrada no array 'registroCandidaturas'
-            // TODO: Serializar a estrutura de candidaturas (ex: converter para JSON)
-            // TODO: Simular a gravação/envio (ex: salvar no localStorage ou realizar um console.log do payload final)
-            // TODO: Exibir mensagem de confirmação de envio ao TSE e limpar os dados da tela
-        }
-    </script>
 
 </body>
 </html>
